@@ -32,7 +32,7 @@ class Produit
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    #[groups(['produit:list','produit:item'])]
+    #[groups(['produit:list','produit:item','type:list','type:item'])]
     private ?string $nom = null;
 
     #[ORM\Column]
